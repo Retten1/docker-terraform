@@ -1,9 +1,7 @@
 FROM ubuntu:latest
 
 # Install packages
-RUN apt-get update && \
-    apt-get install -y \
-    terraform
+RUN apt-get update && apt-get install -y terraform
 
 # Create terraform directory
 WORKDIR /terraform
